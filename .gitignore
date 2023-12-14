@@ -1,0 +1,19 @@
+### VisualStudioCode ###
+.settings/
+.vscode/
+.classpath
+.project
+
+### Windows ###
+Thumbs.db
+ehthumbs.db
+ehthumbs_vista.db
+[Dd]esktop.ini
+
+### macOS ###
+.DS_Store
+.Trashes
+
+### Maven ###
+build/
+target/
