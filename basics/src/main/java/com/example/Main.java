@@ -1,5 +1,6 @@
 package com.example;
 
+import com.example.arrays.Arrays;
 import com.example.primitives.Primitives;
 import com.example.variables.Variables;
 
@@ -28,5 +29,6 @@ public class Main {
 
         // You don't need to declare a variable to use an object.
         new Primitives().doSomething();
+        new Arrays().playWithArrays();
     }
 }
