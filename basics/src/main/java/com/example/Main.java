@@ -1,6 +1,7 @@
 package com.example;
 
 import com.example.arrays.Arrays;
+import com.example.operators.Operators;
 import com.example.primitives.Primitives;
 import com.example.variables.Variables;
 
@@ -19,16 +20,18 @@ public class Main {
         Variables.classVariable = "another thing";
 
         // Instance variables have unique values per instance, hence the name.
-        variables1.doSomething( variables1.instanceVariable );
-        variables2.doSomething( variables2.instanceVariable );
+        variables1.explainVariables( variables1.instanceVariable );
+        variables2.explainVariables( variables2.instanceVariable );
 
         // Class variables have unique values per class and are the same
-        // across instances.
-        variables1.doSomething( variables1.classVariable );
-        variables2.doSomething( variables2.classVariable );
+        // whether accessed across instances or via class.
+        variables2.explainVariables( Variables.classVariable );
 
         // You don't need to declare a variable to use an object.
-        new Primitives().doSomething();
+        new Primitives().explainPrimitives();
         new Arrays().playWithArrays();
+        new Operators().assignmentArithmeticUnary();
+        new Operators().equalityRelationalConditional();
+        new Operators().bitwiseBitShift();
     }
 }

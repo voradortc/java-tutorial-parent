@@ -14,7 +14,7 @@ public class Variables {
 
     // A parameter is the name given to variables that can be specified when a
     // method is called.
-    public void doSomething( String parameter ) {
+    public void explainVariables( String parameter ) {
         // A local variable is the one declared inside a method, and can only
         // be accessed inside that method.
         String localVariable = "this thing";

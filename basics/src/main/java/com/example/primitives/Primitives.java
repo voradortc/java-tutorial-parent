@@ -24,7 +24,7 @@ public class Primitives {
     // - char: single 16-bit Unicode character;
     char charVar;
 
-    public void doSomething() {
+    public void explainPrimitives() {
         // Class and instance primitives are initialized with default values.
         // Local primitives need to be initialized.
         System.out.println( "The default value of byte is: " + byteVar );
