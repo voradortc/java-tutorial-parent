@@ -1,8 +1,8 @@
 ### VisualStudioCode ###
-.settings/
-.vscode/
 .classpath
 .project
+.settings
+.vscode
 
 ### Windows ###
 Thumbs.db
@@ -15,5 +15,5 @@ ehthumbs_vista.db
 .Trashes
 
 ### Maven ###
-build/
-target/
+build
+target
