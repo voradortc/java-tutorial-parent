@@ -11,6 +11,8 @@ public class Operators {
         // operand on its left. The left operand must be a variable.
         int aVariable = 10;
 
+        System.out.println("Test" + "Hola;bienvenido;a;la;aplicación;".split("\\;").length);
+
         // + Additive operator: adds the left and right operands or
         // concatenates a string. Association is left-to-right, hence the
         // parenthesis.
@@ -36,7 +38,8 @@ public class Operators {
 
         // arithmetic operators can be compounded with the assignment operator:
         // +=, -=, *=, /= which becomes equivalent to left operand = left
-        // operand (+, -, *, /) right operand. The left operand must be a variable.
+        // operand (+, -, *, /) right operand. The left operand must be a
+        // variable.
         aVariable *= 3;
         System.out.println( "aVariable times 3 equals: " + aVariable );
 
@@ -66,7 +69,30 @@ public class Operators {
         System.out.println( "!false is " + !false );
     }
 
-    public void equalityRelationalConditional() {}
+    public void equalityRelationalConditional() {
+        int aVariable = 5;
+        int anotherVariable = 6;
+
+        double aVariableFloat = ( 0.3 * 3 ) + 0.1; // 0.3 * 3 + 0.1 = 0.9 + 0.1 = 1.0
+        double anotherVariableFloat = 1;
+
+        // == Equal to operator: compares the left and right operand for 
+        // equality. Floating point numbers should not be comparared using this
+        // operator.
+        System.out.println( aVariable + " == " + anotherVariable + ": " + ( aVariable == anotherVariable ) );
+        System.out.println( aVariableFloat + " == " + anotherVariableFloat + ": " + ( aVariableFloat == anotherVariableFloat ) );
+
+        // != Not equal to operator: compares the left and right operand for 
+        // inequality. Floating point numbers should not be comparared using
+        // this operator.
+        System.out.println( aVariable + " != " + anotherVariable + ": " + ( aVariable != anotherVariable ) );
+        System.out.println( aVariableFloat + " != " + anotherVariableFloat + ": " + ( aVariableFloat != anotherVariableFloat ) );
+
+        // > Greater than operator:
+        // >= Greater than or equal to operator:
+        // < Less than operator:
+        // <= Less than or equal to operator:
+    }
 
     public void bitwiseBitShift() {}
 }
